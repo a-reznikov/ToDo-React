@@ -13,7 +13,7 @@ const ControlItem = () => {
         <i className="fa fa-exclamation" />
       </button>
     </div>
-  )
-}
+  );
+};
 
 export default ControlItem;

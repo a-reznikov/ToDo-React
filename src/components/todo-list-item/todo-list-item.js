@@ -1,5 +1,5 @@
 import React from 'react';
-import ControlItem from './control-item';
+import ControlItem from '../control-item';
 
 import './todo-list-item.css';
 
