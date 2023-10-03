@@ -5,11 +5,17 @@ import AppHeader from './components/app-header';
 import SearchPanel from './components/search-panel';
 
 const App = () => {
+
+  const todoData = [
+    { label: 'Drink Coffee', important: false },
+    { label: 'Make Awesome App', important: true },
+    { label: 'Have a Lunch', important: false },
+  ]
   return (
     <section>
       <AppHeader />
       <SearchPanel />
-      <ToDoList />
+      <ToDoList todoData={todoData} />
     </section>
   )
 };
