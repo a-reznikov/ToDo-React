@@ -25,7 +25,7 @@ export default class TodoListItem extends Component {
   }
 
   render() {
-    const { label } = this.props;
+    const { label, onDeleted } = this.props;
     const { done, important } = this.state;
     const baseClassItem = 'todo-list-item d-flex justify-content-between';
     let classItem = done ? `${baseClassItem} done` : baseClassItem;
@@ -45,7 +45,8 @@ export default class TodoListItem extends Component {
         </span>
         <div className='control-item'>
           <button type="button"
-            className="btn btn-outline-danger btn-sm">
+            className="btn btn-outline-danger btn-sm"
+            onClick={onDeleted}>
             <i className="fa fa-trash" />
           </button>
 
