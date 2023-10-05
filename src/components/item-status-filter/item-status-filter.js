@@ -14,7 +14,6 @@ export default class ItemStatusFilter extends Component {
     const { filter, onFilterChange } = this.props;
     const buttons = this.buttons.map(({ name, label }) => {
       const isActive = filter === name;
-      console.log(filter, name);
       const classButton = isActive ? 'btn-info' : 'btn-outline-secondary';
       return (
         <button type="button"
